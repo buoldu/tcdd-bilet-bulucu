@@ -2,7 +2,7 @@ import requests
 import json
 
 # Endpoint URL
-url = "https://api-yebsp.tcddtasimacilik.gov.tr/istasyon/istasyonYukle"
+url = "https://ebilet.tcddtasimacilik.gov.tr/api/istasyon/istasyonYukle"
 
 # Request body
 body = {
@@ -14,7 +14,12 @@ body = {
 
 # Authorization header
 headers = {
-    'Authorization': 'Basic ZGl0cmF2b3llYnNwOmRpdHJhMzQhdm8u'
+    "Authorization": "Basic ZGl0cmF2b3llYnNwOmRpdHJhMzQhdm8u",
+    "Referer": "https://ebilet.tcddtasimacilik.gov.tr/sefer-listesi",
+    "User-Agent": (
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+        "(KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+    ),
 }
 
 # Send POST request

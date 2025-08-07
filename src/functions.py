@@ -9,8 +9,8 @@ binis_istasyon_id = stations.get(config.binis_istasyon_adi)
 inis_istasyon_id = stations.get(config.inis_istasyon_adi)
 formatted_date = format_date(config.date)
 
-sefer_url = "https://api-yebsp.tcddtasimacilik.gov.tr/sefer/seferSorgula"
-vagon_url = "https://api-yebsp.tcddtasimacilik.gov.tr/vagon/vagonHaritasindanYerSecimi"
+sefer_url = "https://ebilet.tcddtasimacilik.gov.tr/api/sefer/seferSorgula"
+vagon_url = "https://ebilet.tcddtasimacilik.gov.tr/api/vagon/vagonHaritasindanYerSecimi"
 
 # Function to fetch and filter journeys
 def fetch_and_filter_journeys():
